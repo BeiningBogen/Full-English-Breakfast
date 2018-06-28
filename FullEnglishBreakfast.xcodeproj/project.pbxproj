@@ -10,6 +10,7 @@
 		0A1F523A20E58DC100FAFE28 /* FullEnglishBreakfast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1F523020E58DC100FAFE28 /* FullEnglishBreakfast.framework */; };
 		0A1F523F20E58DC100FAFE28 /* FullEnglishBreakfastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F523E20E58DC100FAFE28 /* FullEnglishBreakfastTests.swift */; };
 		0A1F524120E58DC100FAFE28 /* FullEnglishBreakfast.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1F523320E58DC100FAFE28 /* FullEnglishBreakfast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A1F524E20E58E4E00FAFE28 /* Dispatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F524A20E58DDD00FAFE28 /* Dispatching.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,8 @@
 		0A1F523920E58DC100FAFE28 /* FullEnglishBreakfastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FullEnglishBreakfastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1F523E20E58DC100FAFE28 /* FullEnglishBreakfastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullEnglishBreakfastTests.swift; sourceTree = "<group>"; };
 		0A1F524020E58DC100FAFE28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A1F524A20E58DDD00FAFE28 /* Dispatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatching.swift; sourceTree = "<group>"; };
+		0A1F524D20E58E3F00FAFE28 /* UsageExamples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = UsageExamples.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +75,9 @@
 			isa = PBXGroup;
 			children = (
 				0A1F523320E58DC100FAFE28 /* FullEnglishBreakfast.h */,
+				0A1F524A20E58DDD00FAFE28 /* Dispatching.swift */,
 				0A1F523420E58DC100FAFE28 /* Info.plist */,
+				0A1F524D20E58E3F00FAFE28 /* UsageExamples.playground */,
 			);
 			path = FullEnglishBreakfast;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				TargetAttributes = {
 					0A1F522F20E58DC100FAFE28 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					0A1F523820E58DC100FAFE28 = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1F524E20E58E4E00FAFE28 /* Dispatching.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +346,7 @@
 		0A1F524520E58DC100FAFE28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = beiningbogen.FullEnglishBreakfast;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +373,7 @@
 		0A1F524620E58DC100FAFE28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +399,7 @@
 		0A1F524820E58DC100FAFE28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5PKTA338CL;
 				INFOPLIST_FILE = FullEnglishBreakfastTests/Info.plist;
@@ -407,6 +418,7 @@
 		0A1F524920E58DC100FAFE28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5PKTA338CL;
 				INFOPLIST_FILE = FullEnglishBreakfastTests/Info.plist;
